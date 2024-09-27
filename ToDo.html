@@ -5,32 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo App</title>
   </head>
+
   <body>
     <h1>My ToDo List</h1>
+
     <input type="text" id="taskInput" placeholder="Enter your task" />
-    <button id="button">Add</button>
+    <button>Add</button>
 
-    <h2>My Tasks</h2>
-    <ul id="taskList">
-      <li>
-        <input type="checkbox" id="task1" />
-        <label for="task1">Clean the room</label>
-      </li>
-      <li>
-        <input type="checkbox" id="task2" />
-        <label for="task2">Bath Dogs</label>
-      </li>
-      <li>
-        <input type="checkbox" id="task3" />
-        <label for="task3">Do Homework</label>
-      </li>
-    </ul>
+    <div class="myTasks">
+      <h2>My Tasks</h2>
 
-    <hr />
+      <ul>
+        <li>
+          <input type="checkbox" id="task1" />
+          <label for="task1">Clean the room</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task2" />
+          <label for="task2">Bath Dogs</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task3" />
+          <label for="task3">Do Homework</label>
+        </li>
+      </ul>
 
-    <div>
-      Complete : <span id="completedTasks">0</span> | Incomplete:
-      <span id="incompleteTasks">0</span>
+      <hr />
+    </div>
+
+    <div class="taskStatus">
+      Complete : <span>0</span> | Incomplete: <span>0</span>
     </div>
   </body>
 </html>
