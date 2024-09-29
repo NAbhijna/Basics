@@ -3,38 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ToDo App</title>
+    <title>My ToDo List</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <h1>My ToDo List</h1>
+    <div class="todo-container">
+      <h1>MY TODO LIST</h1>
+      <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Enter your task" />
+        <button id="addTask">Add</button>
+      </div>
 
-    <input type="text" id="taskInput" placeholder="Enter your task" />
-    <button>Add</button>
+      <div class="task-list">
+        <h2>My Tasks</h2>
+        <ul id="taskItems">
+          <li><input type="checkbox" id="task1" /> Bath Dogs</li>
+          <li><input type="checkbox" id="task2" /> Do Homework</li>
+          <li><input type="checkbox" id="task3" /> Clean room</li>
+        </ul>
+      </div>
 
-    <div class="myTasks">
-      <h2>My Tasks</h2>
-
-      <ul>
-        <li>
-          <input type="checkbox" id="task1" />
-          <label for="task1">Clean the room</label>
-        </li>
-        <li>
-          <input type="checkbox" id="task2" />
-          <label for="task2">Bath Dogs</label>
-        </li>
-        <li>
-          <input type="checkbox" id="task3" />
-          <label for="task3">Do Homework</label>
-        </li>
-      </ul>
-
-      <hr />
-    </div>
-
-    <div class="taskStatus">
-      Complete : <span>0</span> | Incomplete: <span>0</span>
+      <div class="task-status">
+        Complete: <span id="complete">0</span> | Incomplete:
+        <span id="Incomplete">0</span>
+      </div>
     </div>
   </body>
 </html>
