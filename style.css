@@ -63,6 +63,24 @@ h1 {
   background-color: #ee6c55;
 }
 
+.delete-task {
+  background-color: transparent;
+  color: #ee6c55;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 15px;
+}
+
+.delete-task:hover {
+  background-color: #4f4f51;
+}
+
+.button i {
+  font-size: 16px;
+}
+
 .task-list {
   width: 350px;
   height: 400px;
